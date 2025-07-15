@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
 const pdfParse = require("pdf-parse");
-const Summarizer = require("node-summarizer"); // ✅ CommonJS import
+const Summarizer = require("node-summarizer"); 
 
 const app = express();
 const PORT = 5000;
@@ -10,7 +10,6 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-// Pasted text summarization
 app.post("/summarize", async (req, res) => {
   try {
     const { text } = req.body;
@@ -26,7 +25,6 @@ app.post("/summarize", async (req, res) => {
   }
 });
 
-// PDF summarization
 const upload = multer({ storage: multer.memoryStorage() });
 
 app.post("/summarize-pdf", upload.single("pdf"), async (req, res) => {
