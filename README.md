@@ -1,12 +1,65 @@
-# React + Vite
+# 🧠 TextCruncher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Summarize documents, blogs, and reports — quickly and offline.**  
+Built with Node.js, React, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 What is TextCruncher?
 
-## Expanding the ESLint configuration
+**TextCruncher** is a fast, privacy-friendly text summarization tool that runs entirely offline.  
+It uses extractive techniques like **TextRank** and **frequency analysis** to summarize plain text or PDFs — no internet or AI APIs required.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 📄 Upload **PDF files** or paste plain text
+- ⚡ Instant **extractive summaries**
+- 📊 Get **reduction percentage**, **word count**, and basic **sentiment analysis**
+- 🧠 Runs **completely offline** — no external API calls
+- 🧩 Built with **Node.js**, **React**, **Tailwind CSS**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Summarization:** `node-summarizer`
+- **PDF Parsing:** `pdf-parse`
+- **File Upload:** `express-fileupload`
+
+---
+
+## 📦 Installation
+
+# 1. Clone the repo
+```
+git clone https://github.com/your-username/textcruncher.git
+cd textcruncher
+```
+# 2. Install dependencies
+```
+cd server
+npm install
+
+cd ../client
+npm install
+```
+
+# 3. Run the app
+# In one terminal:
+```
+cd server
+npm start
+```
+# In another terminal:
+```
+cd client
+npm run dev
+```
+
+## 🤝 Contributing
+Pull requests are welcome! Feel free to open issues or suggest features.
+
