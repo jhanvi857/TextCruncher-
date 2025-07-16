@@ -9,7 +9,7 @@ function App() {
 
   const handleSummarize = async () => {
     if (mode === "text" && text.trim()) {
-      const res = await fetch("http://localhost:5000/summarize", {
+      const res = await fetch("https://textcruncher.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
@@ -20,7 +20,7 @@ function App() {
       const formData = new FormData();
       formData.append("pdf", file);
 
-      const res = await fetch("http://localhost:5000/summarize-pdf", {
+      const res = await fetch("https://textcruncher.onrender.com", {
         method: "POST",
         body: formData,
       });
