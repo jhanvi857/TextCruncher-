@@ -5,7 +5,7 @@ function App() {
   const [text, setText] = useState("");
   const [file, setFile] = useState(null);
   const [summary, setSummary] = useState("");
-  const [mode, setMode] = useState("text"); // 'text' or 'pdf'
+  const [mode, setMode] = useState("text"); 
 
   const handleSummarize = async () => {
     if (mode === "text" && text.trim()) {
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-between sm:min-h-screen bg-gray-950 text-white font-sans">
       <header className="w-full text-center py-12 px-4 bg-gradient-to-r from-blue-700 to-indigo-800 shadow-md">
-        <h1 className="text-4xl font-bold mb-2">🧠 Smart Document Summarizer</h1>
+        <h1 className="text-4xl font-bold mb-2">TextCrunch - Smart Document Summarizer</h1>
         <p className="text-gray-200 max-w-xl mx-auto">
           Upload reports or paste text — get summaries in seconds. Runs offline.
         </p>
